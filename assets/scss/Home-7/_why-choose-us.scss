@@ -1,0 +1,151 @@
+.why-choose-us-7 {
+    &__wrapper {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media #{$xl} {
+            gap: 30px;
+        }
+
+        @media #{$lg,$md,$sm,$xs} {
+            display: block;
+        }
+    }
+
+    &__content {
+        &__thumb {
+            width: 680px;
+            height: 512px;
+
+            @media #{$lg,$md,$sm,$xs} {
+                margin: 0 auto;
+            }
+
+            @media #{$sm,$xs} {
+                width: inherit;
+                height: inherit;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__tab {
+        border-left: 4px solid rgb(255 255 255 / 30%);
+        padding-left: 30px;
+        position: relative;
+
+        @media #{$lg,$md,$sm} {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media #{$xs} {
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        &__wrapper {
+            background: #fff;
+            padding: 20px 30px;
+            padding-bottom: 14px;
+            transition: .3s;
+        }
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+
+            @media #{$xs} {
+                flex-direction: column;
+                align-items: self-start;
+            }
+
+            span {
+                width: 50px;
+                height: 50px;
+                background: #FFF2EC;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #141820;
+            margin: 0;
+            text-transform: inherit;
+            font-family: $text-font2;
+        }
+
+        &__dec {
+            font-size: 16px;
+            font-weight: 400;
+            color: #53545A;
+            line-height: 24px;
+            font-family: $text-font2;
+        }
+
+        & .nav-links {
+            &::before {
+                content: "";
+                width: 4px;
+                height: 0px;
+                background: #fff;
+                position: absolute;
+                left: -34px;
+                top: 0;
+                transition: .3s;
+
+                @media #{$xs} {
+                    left: -19px;
+                }
+            }
+
+            &.active {
+                &::before {
+                    height: 168px;
+
+                    @media #{$md} {
+                        height: 142px;
+                    }
+
+                    @media #{$xs} {
+                        height: 300px;
+                    }
+                }
+
+                & .why-choose-us-7 {
+                    &__tab {
+                        &__wrapper {
+                            background: #FFF7F3;
+                        }
+
+                        &__icon {
+                            span {
+                                background: #141820;
+
+                                svg [fill="#FF5E14"] {
+                                    fill: #fff;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

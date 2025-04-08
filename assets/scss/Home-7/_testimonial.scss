@@ -1,0 +1,215 @@
+.testimonial-7 {
+    &__thumb {
+        min-width: 500px;
+        height: 460px;
+
+        @media #{$md} {
+            min-width: 350px;
+            height: 350px;
+        }
+
+        @media #{$sm,$xs} {
+            margin-bottom: 30px;
+        }
+
+        @media #{$xs} {
+            min-width: inherit;
+            height: inherit;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+        margin-bottom: 13px;
+    }
+
+    &__rating {
+        span {
+            font-size: 16px;
+            color: #141820;
+            font-weight: 400;
+            font-family: $text-font2;
+        }
+    }
+
+    &__dec {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #525356;
+        padding-right: 32px;
+        font-family: $text-font2;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 30px 60px rgba(20, 24, 32, 0.1);
+
+        @media #{$md} {
+            gap: 40px;
+        }
+
+        @media #{$sm,$xs} {
+            display: block;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 32px;
+    }
+
+    &__author {
+        &__thumb {
+            width: 51px;
+            height: 51px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__name {
+            font-size: 16px;
+            color: #000000;
+            font-weight: 600;
+            text-transform: none;
+            margin: 0;
+            font-family: $text-font2;
+        }
+
+        &__position {
+            font-size: 14px;
+            color: #525356;
+            font-weight: 400;
+            font-family: $text-font2;
+        }
+    }
+
+    & .rr {
+        &-wrapper {
+            height: 27rem;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 0;
+            z-index: -1;
+
+            @media #{$sm} {
+                height: 48.1rem;
+            }
+
+            @media #{$xs} {
+                height: 41.1rem;
+            }
+        }
+
+        &-slide {
+            position: absolute;
+            transition: all;
+            transition-duration: 1s;
+            opacity: 0;
+            transform: scale(0.92);
+            border-radius: 1rem;
+        }
+
+        &-slide-active {
+            z-index: 10;
+            opacity: 1;
+            top: 0;
+            transform: scale(1);
+        }
+
+        &-slide-next {
+            z-index: 9;
+            top: 3rem;
+            opacity: 0.8;
+        }
+
+        &-slide-next-2 {
+            z-index: 8;
+            top: 6rem;
+            opacity: 0.8;
+            transform: scale(0.82);
+        }
+    }
+
+    & .testimonial-btn {
+        button {
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border-radius: 500px;
+            transition: .3s;
+            border: 1px solid rgb(20 24 32 / 10%);
+
+            &:hover {
+                background: #FF5E14;
+                border-color: #FF5E14;
+
+                svg [fill="#141820"] {
+                    fill: #fff;
+                    transition: .3s;
+                }
+            }
+
+            &.next-btn {
+                position: absolute;
+                top: 67%;
+                right: 16%;
+
+                @media #{$xl} {
+                    right: 4%;
+                }
+
+                @media #{$xxl} {
+                    right: 7%;
+                }
+
+                @media #{$xxxl} {
+                    right: 10%;
+                }
+            }
+
+            &.prev-btn {
+                position: absolute;
+                left: 16%;
+                top: 67%;
+
+                @media #{$xl} {
+                    left: 4%;
+                }
+
+                @media #{$xxl} {
+                    left: 7%;
+                }
+
+                @media #{$xxxl} {
+                    left: 10%;
+                }
+            }
+        }
+    }
+
+}

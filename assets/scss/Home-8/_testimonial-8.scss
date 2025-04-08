@@ -1,0 +1,127 @@
+.testimonial-8 {
+    background: #141820;
+    overflow: hidden;
+
+    &__active {
+        margin-right: -527px;
+
+        @media #{$sm} {
+            margin-right: -300px;
+        }
+        @media #{$xs} {
+            margin-right: 0px;
+        }
+    }
+
+    &__dec {
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-bottom: 44px;
+        font-family: $text-font2;
+    }
+
+    &__item {
+        max-width: 410px;
+        background: #FFFFFF;
+        padding: 37px 30px;
+        box-shadow: 0px 10px 30px rgba(20, 24, 32, 0.1);
+
+        @media #{$lg} {
+            padding: 26px 30px;
+            max-width: inherit;
+        }
+        @media #{$xs} {
+            padding: 15px 15px;
+            max-width: inherit;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__author {
+        &__thumb {
+            width: 51px;
+            height: 51px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__name {
+            font-size: 16px;
+            color: #000000;
+            font-weight: 600;
+            text-transform: none;
+            margin: 0;
+            font-family: $text-font2;
+        }
+
+        &__position {
+            font-size: 14px;
+            font-weight: 400;
+            color: #53545A;
+            font-family: $text-font2;
+        }
+    }
+
+    &__slide {
+        &__dec {
+            font-size: 16px;
+            font-weight: 400;
+            color: #53545A;
+            line-height: 26px;
+            margin-top: 15px;
+            margin-bottom: 26px;
+            font-family: $text-font2;
+        }
+    }
+
+    &__button {
+        width: 44px;
+        height: 44px;
+        background: #fff;
+        border-radius: 500px;
+        border: 1px solid rgb(20 24 32 / 10%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+
+        &__box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 70px;
+
+            @media #{$md} {
+                margin-top: 40px;
+            }
+        }
+
+        &:hover {
+            background: #FF5E14;
+            border-color: #FF5E14;
+
+            svg [fill="#141820"] {
+                fill: #fff;
+                transition: .3s;
+            }
+        }
+    }
+}

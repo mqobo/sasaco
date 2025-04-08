@@ -1,0 +1,45 @@
+.container-1310 {
+    max-width: 1310px !important;
+}
+
+.section-space {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @media (max-width: 991px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-Upper {
+    text-transform: uppercase;
+}
+
+.mb-md-30 {
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+    }
+}
+
+.mb-sm-30 {
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.mb-xs-30 {
+    @media (max-width: 575px) {
+        margin-bottom: 30px;
+    }
+}

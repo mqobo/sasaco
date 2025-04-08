@@ -1,0 +1,151 @@
+.rr-btn {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 31.8px;
+    display: inline-block;
+    background: $primary2;
+    font-family: $text-font2;
+    position: relative;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    &-2 {
+        padding: 12px 30.5px;
+    }
+
+    &-3 {
+        padding: 12px 30px;
+    }
+
+    &.black {
+        background: #141820;
+        color: #fff;
+        padding: 12px 30.1px;
+        &:hover {
+                & .rr-btn {
+                    &__liquidBtn__animation {
+                        background: #141820;
+        
+                        &::before {
+                            background: rgb(255 94 20) !important;
+                        }
+        
+                        &::after {
+                            background: rgb(255 94 20 / 50%) !important;
+                        }
+                    }
+                }
+        
+                & .text {
+                    color: #fff;
+                }
+            }
+    }
+
+    &.white {
+        color: #171717;
+        padding: 12px 30.1px;
+        background-color: #fff;
+
+        &:hover {
+            & .rr-btn {
+                &__liquidBtn__animation {
+                    background: $white;
+
+                    &::before {
+                        background: rgb(255 94 20 / 50%) !important;
+                    }
+
+                    &::after {
+                        background: rgb(255 94 20 / 50%) !important;
+                    }
+                }
+            }
+
+            & .text {
+                color: #171717;
+            }
+        }
+    }
+
+    &__liquidBtn {
+        overflow: hidden;
+
+        & .text {
+            position: relative;
+            z-index: 1;
+        }
+
+        &:hover {
+            & .rr-btn {
+                &__liquidBtn__animation {
+                    top: -80px;
+                    background: $primary2;
+                }
+            }
+
+            & .text {
+                color: #fff;
+            }
+        }
+
+        &__animation {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            transition: 0.5s;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 200%;
+                height: 200%;
+                transform: translate(-50%, -75%);
+            }
+
+            &::before {
+                border-radius: 45%;
+                background: rgba(20, 24, 32, 1);
+                animation: liquidAnimation 10s linear infinite;
+            }
+
+            &::after {
+                border-radius: 40%;
+                background: rgba(20, 24, 32, 0.5);
+                animation: liquidAnimation 10s linear infinite;
+            }
+
+            @keyframes liquidAnimation {
+                0% {
+                    transform: translate(-50%, -75%) rotate(0deg);
+                }
+
+                100% {
+                    transform: translate(-50%, -75%) rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+.rr-btn.transparent {
+    background: transparent;
+    border: 2px solid rgb(255 255 255 / 10%);
+    padding: 9px 26px;
+
+    &-2 {
+        padding: 10px 28.2px;
+    }
+
+    i {
+        margin-left: 6px;
+        transform: rotate(-45deg);
+    }
+}

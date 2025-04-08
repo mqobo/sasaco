@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?bfd971415c1b2d3927a33da777606046") format("truetype"),
+url("./flaticon.woff?bfd971415c1b2d3927a33da777606046") format("woff"),
+url("./flaticon.woff2?bfd971415c1b2d3927a33da777606046") format("woff2"),
+url("./flaticon.eot?bfd971415c1b2d3927a33da777606046#iefix") format("embedded-opentype"),
+url("./flaticon.svg?bfd971415c1b2d3927a33da777606046#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-phone-call:before {
+    content: "\f101";
+}
+.flaticon-list:before {
+    content: "\f102";
+}
+.flaticon-menu:before {
+    content: "\f103";
+}
+.flaticon-heart:before {
+    content: "\f104";
+}
+.flaticon-up-and-down-arrows:before {
+    content: "\f105";
+}
+.flaticon-camera:before {
+    content: "\f106";
+}
+.flaticon-hide:before {
+    content: "\f107";
+}
+.flaticon-show:before {
+    content: "\f108";
+}
+.flaticon-twitter:before {
+    content: "\f109";
+}
+.flaticon-twitter-1:before {
+    content: "\f10a";
+}
+.flaticon-linkedin:before {
+    content: "\f10b";
+}
+.flaticon-facebook-circular-logo:before {
+    content: "\f10c";
+}
+.flaticon-instagram:before {
+    content: "\f10d";
+}
+.flaticon-envelope:before {
+    content: "\f10e";
+}
+.flaticon-location:before {
+    content: "\f10f";
+}
+.flaticon-beds:before {
+    content: "\f110";
+}
+.flaticon-bathtub:before {
+    content: "\f111";
+}
+.flaticon-selection:before {
+    content: "\f112";
+}
+.flaticon-like:before {
+    content: "\f113";
+}
+.flaticon-user:before {
+    content: "\f114";
+}
+.flaticon-home:before {
+    content: "\f115";
+}
+.flaticon-pin:before {
+    content: "\f116";
+}
+.flaticon-add:before {
+    content: "\f117";
+}
+.flaticon-person:before {
+    content: "\f118";
+}

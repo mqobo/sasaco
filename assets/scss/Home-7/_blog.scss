@@ -1,0 +1,192 @@
+.blog-7 {
+    &__btn {
+        &__wrapper {
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: #141820;
+                line-height: 18px;
+                width: 160px;
+                height: 160px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 500px;
+                border: 1px solid #141820;
+
+                &:hover {
+                    background: $primary2;
+                    border-color: $primary2;
+
+                    svg [stroke="#141820"] {
+                        stroke: $white;
+                        transition: .3s;
+                    }
+                }
+
+                @media #{$xs} {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding-bottom: 28px;
+        margin-bottom: 28px;
+        border-bottom: 1px solid #E8E8E9;
+        margin-left: 40px;
+
+        @media #{$lg,$md,$sm,$xs} {
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            border-bottom: none;
+        }
+
+        &:hover {
+            & .blog-7 {
+                &__title {
+                    color: #FF5E14;
+                }
+
+                &__subtitle {
+                    background-color: #EAECF1;
+                    border-color: #EAECF1;
+                    color: #141820;
+                }
+            }
+        }
+
+        @media #{$xs} {
+            display: block;
+        }
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        font-weight: 500;
+        color: #53545A;
+        text-transform: uppercase;
+        border: 1px solid #E8E8E9;
+        padding: 4.5px 9.4px;
+        line-height: 1;
+        transition: .3s;
+        font-family: $text-font2;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #141820;
+        text-transform: capitalize;
+        line-height: 26px;
+        margin-top: 6px;
+        margin-bottom: 13px;
+        font-family: $text-font2;
+    }
+
+    &__meta {
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                font-size: 14px;
+                color: #525356;
+                font-weight: 400;
+                line-height: 1;
+                font-family: $text-font2;
+                margin-right: 6px;
+                padding-right: 10px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    right: 0px;
+                    top: 6.5px;
+                    position: absolute;
+                    background: #141820;
+                    display: inline-block;
+                    border-radius: 30px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0px;
+                    padding-right: 0px;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__thumb {
+        width: 180px;
+        height: 110px;
+        overflow: hidden;
+
+        @media #{$xs} {
+            width: inherit;
+            height: inherit;
+            margin-top: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__wrapper {
+        @media #{$md,$sm,$xs} {
+            margin-bottom: 30px;
+        }
+
+        & .rr-section {
+            &__wrapper {
+                @media #{$md,$sm,$xs} {
+                    margin-bottom: 20px;
+                }
+
+                & .rr-section {
+                    &__title {
+                        font-size: 44px;
+                        line-height: 50px;
+                        letter-spacing: -0.02em;
+
+                        @media #{$md,$sm} {
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        @media #{$xs} {
+                            font-size: 30px;
+                            line-height: 42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

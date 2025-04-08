@@ -1,0 +1,86 @@
+.working-process-7 {
+    &__item {
+        position: relative;
+
+        @media #{$lg,$sm,$xs} {
+
+            &.item-1,
+            &.item-2,
+            &.item-3 {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media #{$md} {
+
+            &.item-1,
+            &.item-2 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__icon {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 500px;
+        position: relative;
+        margin: auto;
+        border: 1px solid rgb(20 24 32 / 10%);
+
+        & .number {
+            font-size: 24px;
+            color: #141820;
+            font-weight: 700;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #fff;
+            font-family: $text-font2;
+            border: 1px solid rgb(20 24 32 / 10%);
+        }
+    }
+
+    &__border {
+        &__shape {
+            position: absolute;
+            right: -107px;
+            top: 36px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        color: #141820;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-transform: none;
+        font-family: $text-font2;
+
+        @media #{$xl} {
+            font-size: 23px;
+        }
+    }
+
+    &__dec {
+        font-size: 16px;
+        font-weight: 400;
+        color: #53545A;
+        line-height: 26px;
+        font-family: $text-font2;
+
+        @media #{$xl} {
+            font-size: 15px;
+        }
+    }
+}
